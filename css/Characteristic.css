@@ -1,0 +1,14 @@
+#images {
+    float: left;
+}
+
+#text {
+    float: right;
+    font-size: 20px;
+    margin-right: 50px;
+    
+}
+
+.telname {
+    text-align: center;
+}

@@ -1,0 +1,132 @@
+ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+form {
+  position: relative;
+  width: 300px;
+    
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.searchinput {
+  outline: none;
+  background: transparent;
+}
+.searchinput {
+  width: 97%;
+  height: 42px;
+  
+  border: 3px solid white;
+}
+
+.searchinput:focus {
+  border-color: black;
+}
+.priceinput {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+  border: 3px solid #333;
+}
+
+
+.active {
+    background-color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+
+}
+.main {
+    display: flex;
+}
+
+.filter {
+    width: 25%;
+    font-size: 18px;
+
+}
+.gallery {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 200px;
+}
+.product-sections {
+    padding: 10px;
+    text-align: center;
+}
+
+.name-row {
+    display: flex;
+    justify-content: space-between;
+}
+.name {
+    align-self: start;
+}
+
+.price {
+    align-self: end;
+}
+
+
+.buybutton {
+    border: 2px solid #333;
+    font-size: 11px;
+    transition-duration: 0.4s;
+    
+    
+}
+
+.buybutton:hover {
+    background-color: #333; 
+    color: white;
+}
+
+.selector-button{
+    border: 2px solid #333;
+    font-size: 14px;
+    transition-duration: 0.4s;
+}
+
+.selector-button:hover {
+    background-color: #333; 
+    color: white;
+}
+
+#status {
+    text-align: center;
+    height: 20px;
+}
