@@ -10,10 +10,6 @@ const productMasyv = [
         price: "20$"
     },
     {
-        name: "Шапка",
-        price: "25$"
-    },
-    {
         name: "Штани",
         price: "60$"
     },
@@ -74,3 +70,34 @@ for (let i = 0; i < productElements.length; ++i) {
         status.innerHTML = 'You selected:' + name;
     }));
 }
+
+fetch('http://localhost:8080/price/calculate')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Response:', data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+
+// const form = document.querySelector(".containerLogIn");
+// const formButtons = document.querySelectorAll(".formButton");
+// const formExit = document.querySelectorAll(".formbuttonExit");
+// formButtons.forEach((el)=> {
+//     el.addEventListener('click', (e) => {
+//         form.classList.add('open');
+//
+//         event.preventDefault()
+//     });
+// });
+// formExit.forEach((el) => {
+//     el.addEventListener('click', (e) => {
+//         form.classList.remove('open')
+//         event.preventDefault()
+//     });
+// });
